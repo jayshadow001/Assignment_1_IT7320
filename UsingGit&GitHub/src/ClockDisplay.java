@@ -27,7 +27,9 @@ public class ClockDisplay {
 		}
 		updateDisplay();
 	}
-
+	public String getTime(){
+		return displayString;
+	}
 	private void updateDisplay(){
 		displayString = hours.getDisplayValue() + ":" + minutes.getDisplayValue();
 	}
