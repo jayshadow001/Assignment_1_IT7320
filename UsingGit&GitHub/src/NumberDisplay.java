@@ -15,7 +15,19 @@ public class NumberDisplay{
 			value = replacementValue;
 		}
 	}
+	public String getDisplayValue() {
+		if(value <10){
+			return "0" + value;
+		}
+		else{
+			return "" + value;
+		}
+	}
+	public void increment(){
+		value =(value + 1) % limit;
+	}
 	public static void main(String[] args) {
 		System.out.println(".....");
 	}
+	
 }
