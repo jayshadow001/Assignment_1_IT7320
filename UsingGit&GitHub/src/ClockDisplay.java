@@ -20,7 +20,14 @@ public class ClockDisplay {
 		minutes.setValue(minute);
 		updateDisplay();
 	}
-	
+	public void timeTick(){
+		minutes.increment();
+		if(minutes.getValue() == 0){
+			hours.increment(); //roll over
+		}
+		updateDisplay();
+	}
+
 	private void updateDisplay(){
 		displayString = hours.getDisplayValue() + ":" + minutes.getDisplayValue();
 	}
