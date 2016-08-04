@@ -27,7 +27,7 @@ public class NumberDisplay{
 		value =(value + 1) % limit;
 	}
 	public static void main(String[] args) {
-		System.out.println(".....");
+		System.out.println("This is a clock display");
 	}
 	
 }
