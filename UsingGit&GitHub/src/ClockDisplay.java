@@ -6,5 +6,10 @@ public class ClockDisplay {
 	public ClockDisplay(){
 		hours = new NumberDisplay(24);
 		minutes = new NumberDisplay(60);
+		updateDisplay();
+	}
+	
+	private void updateDisplay(){
+		displayString = hours.getDisplayValue() + ":" + minutes.getDisplayValue();
 	}
 }
