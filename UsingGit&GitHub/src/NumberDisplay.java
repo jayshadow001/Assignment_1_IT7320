@@ -28,6 +28,7 @@ public class NumberDisplay{
 	}
 	public static void main(String[] args) {
 		System.out.println("This is a clock display");
+		//add another Sysout here Bruce
 	}
 	
 }
