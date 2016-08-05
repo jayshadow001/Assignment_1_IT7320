@@ -14,6 +14,9 @@ public class NumberDisplay{
 		if((replacementValue >=0 ) && (replacementValue < limit)){
 			value = replacementValue;
 		}
+		else{
+			System.out.println("error");
+		}
 	}
 	public String getDisplayValue() {
 		if(value <10){
